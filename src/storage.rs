@@ -1,15 +1,15 @@
-use crate::Food;
+use crate::food::FoodItem;
 
 pub enum StorageCategory {
     Cupboard,
     Fridge,
-    Freezer
+    Freezer,
 }
 
 pub struct Storage {
     name: String,
     category: StorageCategory,
-    contents: Vec<Food>
+    contents: Vec<FoodItem>,
 }
 
 impl Storage {
@@ -17,8 +17,7 @@ impl Storage {
         Self {
             name,
             category,
-            contents: vec![]
+            contents: vec![],
         }
     }
 }
-
