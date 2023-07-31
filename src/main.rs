@@ -1,3 +1,5 @@
+mod storage;
+
 #[derive(Debug)]
 struct Date {
     day: i8,
@@ -43,3 +45,4 @@ fn main() {
 
     println!("{:?}", egg);
 }
+
